@@ -1,0 +1,151 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 33px;
+}
+
+.menu__item {
+    flex-grow: 0; 
+}
+
+
+
+.destaques {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+}
+
+
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    row-gap: 1em;
+    justify-content: space-between;
+}
+
+.eventos__item {
+    flex-basis: calc(33.33% - 1.5em);
+    margin-bottom: 1em;
+}
+
+
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    row-gap: 1em;
+    justify-content: space-between;
+    
+}
+
+.agenda__item {
+    flex-basis: calc(33.33% - 1.5em);
+    margin-bottom: 1em;
+}
+ 
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    
+}
+
+.rodape__logo{
+    
+    align-self: end;
+    
+}
+
+@media (min-width: 720px) {
+    
+    .menu {
+        column-gap: 104px;
+    }
+
+    .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5em;
+        row-gap: 1em;
+    }
+
+    .eventos__lista {
+        justify-content: end;
+    }
+
+
+    .agenda__lista {
+        justify-content: end;
+    }   
+ 
+    
+    
+}
+
+
+@media screen and (min-width:1440px) {
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .menu__item:nth-child(1) {
+        order: 1;
+    }
+
+   .menu__item:nth-child(2) {
+       order: 3;
+   }
+
+   .menu__item:nth-child(3) {
+       order: 4;
+   }
+
+   .menu__item:nth-child(4) {
+       order: 5;
+   }
+
+   .menu__item:nth-child(5) {
+       order: 2;
+   }
+
+   .agenda__botao {
+       display: none;
+   }
+
+   .eventos__botao {
+       display: none;
+   }
+
+
+
+
+} 
+
+@media screen and (min-width:1738px) {
+    .eventos__item {
+        flex-basis: calc(25% - 1.5em); 
+    }
+
+    .agenda__item {
+        flex-basis: calc(33.33% - 1.5em);
+    }
+
+
+} 
